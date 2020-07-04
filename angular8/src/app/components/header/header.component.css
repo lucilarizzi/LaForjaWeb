@@ -1,0 +1,63 @@
+.logoForja {
+    width: 60%;
+}
+
+.argentina {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.lineaAmarilla {
+    border-color: rgb(226, 173, 26);
+}
+
+.info-box {
+    /*  border-right: 1px solid #dedede; */
+    /* border-right: 0.5px solid rgba(0, 0, 0, 0.1); */
+}
+
+p {
+    font-family: 'Roboto';
+    margin-bottom: 0;
+}
+
+.nav-link {
+    font-family: 'Roboto';
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-bar {
+    height: 15vh;
+}
+
+i {
+    font-size: 20pt;
+    padding: 5px;
+}
+
+.pacheco {
+    font-size: 20px;
+}
+
+.btn-tienda {
+    font-size: 10pt;
+    border-radius: 9px;
+    font-weight: 700;
+}
+
+
+/* default styles here for older browsers. 
+       I tend to go for a 600px - 960px width max but using percentages
+    */
+
+@media only screen and (max-width: 349px) {}
+
+@media only screen and (min-width: 350px) {}
+
+@media only screen and (min-width: 760px) {}
+
+@media only screen and (min-width: 960px) {}
+
+@media only screen and (min-width: 1440px) {}

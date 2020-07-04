@@ -1,0 +1,94 @@
+<div class="row mt-5 mb-3 ">
+    <!-- <div class="col-2"></div> -->
+    <div class="col-lg-6 col-12 ml-auto mr-auto text-sm-center text-md-center text-lg-center text-center" routerLink="/inicio">
+        <img src="../../../assets/laforja/Sin título-1-01.svg" alt="" class="logoForja">
+        <p class="mb-1 argentina"> Bs As, Argentina</p>
+    </div>
+
+    <div class=" col-lg-6 col-12">
+        <hr class=" d-block d-lg-none mt-1 lineaAmarilla">
+        <div class="row text-center py-auto mt-1">
+            <div class="col-lg-5 col-4  info-box text-center my-auto">
+                <p style="font-weight: 600; font-size: 9pt;  " class="argentina" data-toggle="tooltip" data-placement="bottom" title="Feriado Cerrado"> HORARIO DE ATENCION: </p>
+                <p style="font-weight: 500; font-size: 9pt;  "> Lunes a Viernes de 10 a 18 hs.</p>
+                <p style="font-weight: 500;  font-size: 9pt;  "> Sábados de 10 a 13 hs </p>
+            </div>
+            <div class="col-lg-3  col-4  info-box my-auto mx-auto">
+                <a type="button" class="btn-tienda btn btn-sm btn-warning btn-rounded btn-sm 
+                    text-dark text-sm btn-block " href="https://laforja.mercadoshops.com.ar/" target="_blank"><strong>
+                        Tienda Online
+                    </strong></a>
+            </div>
+
+            <div class="col-lg-3   col-4  info-box ml-lg-1 my-auto mx-auto">
+                <div class="row my-auto " style="font-weight: 700; align-content: center;">
+                    <a class=" my-auto col-2 float-right  " style="color: #000000; " href="mailto:laforjaequipos@gmail.com " target="_blank">
+                        <i class="fas fa-envelope" style="color: #000000;"></i>
+                    </a>
+                    <a class=" my-auto col-2 float-right  " style="color: #000000; " href="https://api.whatsapp.com/send?phone=541161188700&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n." target="_blank">
+                        <i class="fa fa-whatsapp" style="color: #000000;"> </i>
+                    </a>
+                    <a class="my-auto col-2 float-right " style="color: #000000; " href="https://www.facebook.com/La-Forja-Equipamiento-Cervecero-364072507277975/" target="_blank">
+                        <i class="fab fa-facebook-square "></i>
+                    </a>
+                    <a class="my-auto col-2 float-right " style="color: #000000; " href="https://www.instagram.com/laforjaequipos/" target="_blank">
+                        <i class="fab fa-instagram "></i>
+                    </a>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <!--   <div class="col-2"></div> -->
+</div>
+
+
+
+
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark unique-color-dark ml-auto mr-auto d-none d-sm-block" class="pt-5 pb-5 ">
+    <mdb-navbar-brand>
+        <a class="navbar-brand mt-3" routerLink="/inicio"></a>
+    </mdb-navbar-brand>
+    <links>
+        <ul class="navbar-nav ml-auto mr-auto">
+            <li class="nav-item mr-5 active ">
+                <a class="nav-link waves-light" mdbWavesEffect routerLink="/inicio">Inicio <span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <!--    <li class="nav-item mr-5">
+                <a class="nav-link waves-light" mdbWavesEffect>Equipos</a>
+            </li> -->
+
+            <li class="nav-item dropdown mr-5" dropdown>
+                <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                    Equipos<span class="caret"></span></a>
+                <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                    <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/inoxidables">Inoxidables</a>
+                    <a class="dropdown-item waves-light" mdbWavesEffect routerLink="/aluminio">Aluminio</a>
+                </div>
+            </li>
+
+            <li class="nav-item mr-5">
+                <a class="nav-link waves-light" mdbWavesEffect routerLink="/asesoramiento">Asesoramiento</a>
+            </li>
+            <li class="nav-item mr-5 dropdown btn-group" dropdown>
+                <a class="nav-link  waves-light" mdbWavesEffect routerLink="/cursos">
+                    Cursos</a>
+
+            </li>
+            <li class="nav-item mr-5 dropdown btn-group" dropdown>
+                <a class="nav-link  waves-light" mdbWavesEffect routerLink="/nosotros">
+                    Nosotros</a>
+
+            </li>
+            <li class="nav-item mr-5">
+                <a class="nav-link waves-light" routerLink="/contacto" mdbWavesEffect>Contacto</a>
+            </li>
+            <!--        <li class="nav-item mr-5">
+                <a class="nav-link waves-light" mdbWavesEffect>Notas</a>
+            </li> -->
+        </ul>
+    </links>
+</mdb-navbar>

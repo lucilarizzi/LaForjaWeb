@@ -1,0 +1,61 @@
+@media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+        float: left;
+        width: 25%;
+        max-width: 100%;
+    }
+    .tituloEquipo {
+        font-size: 20pt;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-color: rgb(29, 28, 28);
+        margin-left: -140px;
+        padding: 20px;
+        color: white;
+        width: 114%;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+        float: left;
+        width: 25%;
+        max-width: 100%;
+    }
+    .tituloEquipo {
+        font-size: 15pt;
+        font-weight: 600;
+        text-transform: uppercase;
+        background-color: rgba(29, 28, 28, 0.8);
+        margin-left: 0;
+        padding: 20px;
+        color: white;
+        width: 100%;
+        margin-top: -120px;
+    }
+}
+
+.carousel-multi-item-2 .card img {
+    border-radius: 2px;
+}
+
+.upTituloEquipo {
+    background-color: rgb(29, 28, 28);
+}
+
+.card:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .4), 0 2px 10px 0 rgba(0, 0, 0, .3);
+}
+
+.card:hover .verHover {
+    display: block;
+}
+
+.verHover {
+    display: none;
+}
+
+.card:hover .card-footer {
+    font-weight: 600;
+    background-color: var(--colorSecundario);
+}
