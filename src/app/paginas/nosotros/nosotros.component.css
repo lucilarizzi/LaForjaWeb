@@ -1,0 +1,238 @@
+@media screen and (min-width: 901px) {
+    .container {
+        width: 80%;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        min-width: 500px;
+    }
+    .somos {
+        font-size: 8pt;
+        font-weight: 300;
+        font-style: oblique;
+    }
+}
+
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+
+@media screen and (max-width: 900px) {
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+    }
+    .container {
+        width: 80%;
+        height: 100%;
+    }
+    .somos {
+        font-size: 8pt;
+        font-weight: 300;
+        font-style: oblique;
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 30vh;
+}
+
+.ts-service-box:hover {
+    background-color: rgba(160, 160, 160, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: darkblue;
+}
+
+.active {
+    background-color: #f3d996;
+    border-radius: 10px;
+}
+
+.ts-service-box {
+    padding: 20px;
+}
+
+
+/* Service box */
+
+.ts-service-box .ts-service-icon i {
+    font-size: 36px;
+    float: left;
+    color: rgba(231, 177, 39, 0.9);
+}
+
+.ts-service-box .ts-service-box-content {
+    margin-left: 62px;
+    margin-bottom: 30px;
+}
+
+.tab-content .ts-service-box .ts-service-box-content {
+    margin-left: 90px;
+}
+
+.ts-service-box .ts-service-box-content h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+
+.ts-service-box .ts-service-box-info {
+    margin-left: 90px;
+}
+
+.service-box-title {
+    font-size: 16px;
+    margin: 0 0 10px;
+}
+
+.service-box-title a {
+    color: #333;
+}
+
+.service-box-title a:hover {
+    color: #ffb600;
+}
+
+.service-center-img {
+    padding: 0;
+}
+
+
+/* Service box bg */
+
+.ts-service-box-bg {
+    background: #252525;
+    color: #fff;
+    /* padding: 30px; */
+}
+
+.ts-service-box-bg h4,
+.ts-service-box-bg h3 {
+    color: #fff;
+}
+
+.ts-service-icon.icon-round i {
+    font-size: 24px;
+    color: #fff;
+    background: #ffb600;
+    text-align: center;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 20px;
+    position: relative;
+    float: none;
+}
+
+.service-box-title {
+    font-size: 20px;
+    margin: 0 0 10px;
+    font-weight: 800;
+}
+
+.service-box-title a {
+    color: #333;
+}
+
+
+/* Newsletter */
+
+.ts-newsletter {
+    background: #252525;
+    position: relative;
+    min-height: 115px;
+    padding: 30px 0 0 50px;
+}
+
+.ts-newsletter:after {
+    content: "";
+    position: absolute;
+    background: #252525;
+    display: block;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    top: 0;
+}
+
+.newsletter-introtext {
+    float: left;
+    color: #fff;
+}
+
+.newsletter-introtext h4 {
+    margin: 0;
+    color: #fff;
+}
+
+.newsletter-form {
+    float: left;
+    margin-left: 30px;
+    margin-top: 3px;
+    position: relative;
+}
+
+.newsletter-form input {
+    background: none;
+    min-width: 450px;
+    font-size: 12px;
+    text-transform: capitalize;
+    height: 45px;
+    border: 1px solid rgba(255, 255, 255, .3);
+}
+
+
+/* Subscribe area
+================================================== */
+
+.subscribe {
+    background: #ffb600;
+    padding: 0;
+}
+
+
+/* Call to action */
+
+.subscribe-call-to-acton {
+    min-height: 115px;
+    padding: 30px 0 0 30px;
+}
+
+.subscribe-call-to-acton h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.subscribe-call-to-acton h4 {
+    color: #fff;
+    font-size: 24px;
+    margin: 0;
+}
+
+
+/* .service-box-title a:hover,
+i:hover {
+    color: #ffb600;
+} */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /*  width: 250; */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 4px 8px;
+    z-index: 1;
+    right: 20%;
+    left: auto;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

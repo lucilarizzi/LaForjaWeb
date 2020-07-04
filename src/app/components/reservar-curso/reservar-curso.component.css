@@ -1,0 +1,213 @@
+.nav-link>.active :hover {
+    background-color: tomato;
+}
+
+.nav-pills .nav-link.active {
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+    height: 75px;
+}
+
+.nav-pills .nav-link {
+    color: #fff8e1;
+    font-size: 16pt;
+}
+
+.nav-pills .nav-link:after {
+    position: absolute;
+    top: 20px;
+    bottom: 10px;
+    right: 0;
+    width: 0;
+    height: 0;
+    content: '';
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fafafa transparent transparent;
+    opacity: 0;
+}
+
+.lead {
+    font-size: 2.5vh;
+}
+
+#content {
+    overflow: visible;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#container {
+    width: 100%;
+}
+
+.wrapper {
+    /* The height needs to be set to a fixed value for the effect to work.
+     * 100vh is the full height of the viewport. */
+    height: 100vh;
+    /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+    overflow-x: hidden;
+    /* Enable scrolling on the page. */
+    overflow-y: auto;
+    /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+    perspective: 2px;
+}
+
+.section {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 100vh;
+    /* For text formatting. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
+}
+
+.parallax::after {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    transform: translateZ(-1px) scale(1.5);
+    /* Force the background image to fill the whole element. */
+    background-size: 100%;
+    /* Keep the image from overlapping sibling elements. */
+    z-index: -1;
+}
+
+
+/* The styling for the static div. */
+
+.static {
+    background: red;
+}
+
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+
+.bg1::after {
+    background-image: url('https://placekitten.com/g/900/700');
+}
+
+.bg2::after {
+    background-image: url('https://placekitten.com/g/800/600');
+}
+
+
+/* general CSS, unrelated to parallax or img */
+
+body {
+    background: #fff;
+    color: #222;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.code {
+    font-family: 'PT Mono', serif;
+    color: #090;
+}
+
+.writing {
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 560px) {
+    .writing {
+        width: 96%;
+    }
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* template para responsive */
+
+@media only screen and (min-width: 350px) {
+    li {
+        font-size: 8pt;
+    }
+    p {
+        font-size: 12pt;
+    }
+    h2 {
+        font-weight: 700;
+    }
+    a {
+        font-size: 9pt;
+    }
+    .container {
+        height: 100vh
+    }
+}
+
+@media only screen and (min-width: 760px) {
+    li {
+        font-size: 10pt;
+    }
+    p {
+        font-size: 12pt;
+    }
+    h2 {
+        font-weight: 700;
+    }
+    a {
+        font-size: 10pt;
+    }
+    .nav-pills .nav-link.active,
+    .nav-pills .text-light .show>.nav-link {
+        background-color: #faf3dc!important;
+        border-radius: 0;
+        padding-top: 20px;
+        height: 130px;
+    }
+    .container {
+        height: 100vh
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    li {
+        font-size: 12pt;
+    }
+    p {
+        font-size: 15pt;
+    }
+    h2 {
+        font-weight: 700;
+    }
+    .nav-link {
+        font-size: 15pt;
+    }
+    .nav-pills .nav-link.active,
+    .nav-pills .text-light .show>.nav-link {
+        background-color: #faf3dc!important;
+        border-radius: 0;
+        padding-top: 20px;
+        height: 90px;
+    }
+    .container {
+        height: 70vh
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        height: 65vh
+    }
+}
+
+@media only screen and (min-width: 2000px) {}
